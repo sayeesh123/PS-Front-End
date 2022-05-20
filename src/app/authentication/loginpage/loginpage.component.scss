@@ -1,0 +1,57 @@
+body{
+    animation: myanimation 10s infinite;
+}
+@keyframes myanimation {
+    0% {background-color: rgb(58, 57, 57);}
+    50%{background-color:rgb(190, 186, 186);}
+    100% {background-color: rgb(58, 57, 57);}
+  }
+  mat-toolbar{
+    background-color: rgb(162, 160, 160);
+}
+body{
+    animation: myanimation 10s infinite;
+}
+p{
+    padding-top:35px;
+    margin-top: 30px;
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.my-card {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding:5%;
+    padding-top:2%;
+    padding-bottom:2%;
+    width: 40%;
+    box-shadow: 5px 5px 50px;
+  }
+  .my-form{
+      text-align: center;
+  }
+  .mat-form-field{
+    width: 400px;
+}
+
+  mat-card-actions{
+    a{
+        font-size: small;
+        float: right;
+    }
+    button{
+        margin-top:20px;
+      }
+  }
+  mat-card-actions{
+    a:hover{
+        color: green;
+    }
+    button:hover{
+        background:green;
+      }
+  }

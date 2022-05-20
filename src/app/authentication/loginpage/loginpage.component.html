@@ -1,0 +1,23 @@
+<body>
+    <router-outlet></router-outlet>
+    <mat-card class="my-card">
+        <mat-card-content>
+            <p style="text-align:center;font-size:150%;margin-bottom:5%"> Login Page </p>
+           <form class="my-form">
+              <mat-form-field class="full-width">
+                 <mat-label>Email</mat-label>
+                 <input  matInput type="email" placeholder="Email" name="email" required>
+              </mat-form-field><br>
+              <mat-form-field class="full-width">
+                 <mat-label>Password</mat-label>
+                 <input  matInput type="password" placeholder="Password" name="password" required>
+              </mat-form-field>
+           </form>
+        </mat-card-content>
+        <mat-card-actions>
+            <a routerLink="" style="float:left">Creat an Account</a>
+            <a [routerLink]="['../forgot']" (click)="mylink()">Forgot Password</a><br>
+           <button mat-raised-button (click)="submit()" color="accent" style="margin-left:40%">LOGIN</button>
+        </mat-card-actions>
+     </mat-card>
+ </body>
