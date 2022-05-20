@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClient } from '@angular/common/http';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialsModules } from './MaterialModules/materials';
@@ -18,9 +17,9 @@ import { Services } from './Services/services';
     MaterialsModules,
     BrowserAnimationsModule,
     FormsModule,
-    
+    HttpClientModule,
   ],
-  providers: [Services,HttpClient],
+  providers: [Services],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

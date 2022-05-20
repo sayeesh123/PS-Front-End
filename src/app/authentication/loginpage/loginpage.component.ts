@@ -25,6 +25,7 @@ export class LoginpageComponent implements OnInit {
   }
   
   submit(){
+    console.log(this.loginDetails.value)
     if(this.loginDetails.status == 'VALID'){
       console.log(this.loginDetails.value)
       this.apiMethode.post_request( this.apiString.LoginPage.login,this.loginDetails.value).subscribe(result =>{
@@ -32,8 +33,9 @@ export class LoginpageComponent implements OnInit {
       })
       this.apiMethode.popupMessage('success','Login Successfully')
     }
-    this.loginDetails.controls['email'].setErrors(null);
-    this.apiMethode.popupMessage('error','Login Failed')
+    // this.loginDetails.controls['email'].setErrors(null);
+    // this.apiMethode.popupMessage('error','Login Failed')
+    this.apiMethode.popupMessage('error','Invalid Details')
   }
   mylink(){
     this.link=false

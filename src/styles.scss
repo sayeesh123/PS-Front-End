@@ -1,4 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import '~bootstrap/scss/bootstrap';
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.success{
+    background-color: rgb(7, 116, 7);
+    width: 100px;
+    box-shadow: 3px 3px 10px black;
+}
+.error{
+    background-color: rgb(182, 5, 5);
+    width: 100px;
+    box-shadow: 3px 3px 10px black;
+}
