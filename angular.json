@@ -1,12 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "3ce39c7a-b899-4f8b-a4d7-4c94892b0bfe"
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PS-Project": {
+    "PS-Front-End": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ps-project",
+            "outputPath": "dist/ps-front-end",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "PS-Project:build:production"
+              "browserTarget": "PS-Front-End:build:production"
             },
             "development": {
-              "browserTarget": "PS-Project:build:development"
+              "browserTarget": "PS-Front-End:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "PS-Project:build"
+            "browserTarget": "PS-Front-End:build"
           }
         },
         "test": {
@@ -110,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "PS-Project"
+  "defaultProject": "PS-Front-End"
 }
