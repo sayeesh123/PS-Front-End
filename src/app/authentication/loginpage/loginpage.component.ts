@@ -19,12 +19,13 @@ export class LoginpageComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginDetails = this.fb.group({
-      username:['',Validators.required],
+      email:['',Validators.required],
       password:['',Validators.required]
     })
   }
   
   submit(){
+  
     console.log(this.loginDetails.value)
     if(this.loginDetails.status == 'VALID'){
       console.log(this.loginDetails.value)
